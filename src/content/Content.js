@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import animagif from "../assets/animation.gif"
+import style from  "./content.scss"
 import { Button } from "antd";
 
 function App() {
@@ -21,8 +22,8 @@ function App() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
   const handleNoClick = () => {
-    setYesSize(yesSize + 20); // Increase Yes button size by 20px
-    setShowGif(false); // Hide GIF if visible
+    setYesSize(yesSize + 20); 
+    setShowGif(false); 
   };
 
   const handleYesClick = () => {
@@ -41,7 +42,6 @@ function App() {
   };
 
   return (
-
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       <div>
     <span> kochikitiya????? </span>
@@ -63,8 +63,7 @@ function App() {
         <Button style={{ fontSize: "16px", height: "50px" }} onClick={handleNextQuestion}>ila</Button>
       
       )}
-    </div>
-     
+    </div>   
       {showGif && (
         <div style={{ marginTop: "20px" }}>
           <span> SARI KOCHIKATHA , UMMMUUKUCCCHHUUUUUUU💋 </span>
@@ -76,6 +75,7 @@ function App() {
         </div>
       )}
     </div>
+
   );
 };
 
