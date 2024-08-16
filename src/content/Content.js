@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import animagif from "../assets/animation.gif"
-import style from  "./content.scss"
 import { Button } from "antd";
 
 function App() {
